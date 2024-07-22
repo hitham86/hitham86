@@ -29,7 +29,7 @@ Aspiring developer passionate about Python, JavaScript, and SQL. Always eager to
 
 <h2 align="left">⚒️ Languages-Frameworks-Tools ⚒️</h2>
 <div align="left">
-    <img src="https://skillicons.dev/icons?i=python,js,sql,github" /><br>
+    <img src="https://skillicons.dev/icons?i=python,js,mysql,github,vscode" /><br>
 </div>
 
 <br/>
