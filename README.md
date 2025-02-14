@@ -1,5 +1,5 @@
 <h1 align="left">👋 Hello, I'm Hitham</h1>
-<h3 align="left">Student | Python and JS Developer</h3>
+<h3 align="left">Student | Python Developer</h3>
 
 <div align="left"> 
   <a href="mailto:hithamhauter@yahoo.com" target="_blank">
@@ -17,7 +17,7 @@ Aspiring developer passionate about Python, JavaScript, and SQL. Always eager to
 
 <div align="left">
  
- 🔭 I’m currently working on **Python and JavaScript Projects**
+ 🔭 I’m currently working on **Python Projects**
  
  🌱 I’m currently learning more about **Artificial Intelligence and Data Science**
 
