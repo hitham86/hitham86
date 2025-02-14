@@ -24,6 +24,7 @@ Aspiring developer passionate about Python, JavaScript, and SQL. Always eager to
 💬 Ask me about **Programming and SQL**
 
 📧 Reach me out: hithamhauter@yahoo.com
+Linkedin: www.linkedin.com/in/hitham-hauter
 
  </div>
 
