@@ -37,5 +37,5 @@ Linkedin: www.linkedin.com/in/hitham-hauter
 
 <h2 align="left">📊 Github Stats 📊</h2>
 
-![Hitham Hauter's GitHub Stats](https://github-readme-stats.vercel.app/api?username=hitham86&show_icons=true&theme=radical)
+
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&show_icons=true&theme=radical)
