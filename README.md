@@ -3,8 +3,11 @@
 
 <div align="left"> 
   <a href="mailto:hithamhauter@yahoo.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" />
+    <img src="https://img.shields.io/badge/Yahoo-6001D2?style=for-the-badge&logo=yahoo&logoColor=white" alt="Yahoo Badge" />
   </a> 
+  <a href="mailto:hithamhauter@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge" />
+  </a>
   <a href="https://github.com/hitham86" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge" />
   </a>
@@ -28,7 +31,13 @@ Driven by curiosity and a love for coding.
 - 🔭 Working on **Python Projects**
 - 🌱 Learning more about **Artificial Intelligence** and **Data Science**
 - 💬 Ask me about **Programming** and **SQL**
-- 📫 Reach me at: [hithamhauter@yahoo.com](mailto:hithamhauter@yahoo.com)
+
+---
+
+### 📫 Contact Me
+
+Email: [hithamhauter@yahoo.com](mailto:hithamhauter@yahoo.com) | [hithamhauter@gmail.com](mailto:hithamhauter@gmail.com)  
+LinkedIn: [linkedin.com/in/hitham-hauter](https://www.linkedin.com/in/hitham-hauter)
 
 ---
 
@@ -46,5 +55,5 @@ Driven by curiosity and a love for coding.
 
 ---
 
-> 💡 *Feel free to connect or collaborate — I'm always open to new opportunities and projects!*
+> 💡 *Open to collaboration, learning, and new opportunities — feel free to reach out!*
 
