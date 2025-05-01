@@ -20,7 +20,7 @@
 
 ### 🙋‍♂️ About Me
 
-Aspiring developer passionate about **Python**, **JavaScript**, and **SQL**.  
+Aspiring developer passionate about **Python**, **JavaScript**, **SQL**, **Golang**, and **Swift**.  
 Always eager to learn new technologies and solve challenging problems.  
 Driven by curiosity and a love for coding.
 
@@ -36,7 +36,7 @@ Driven by curiosity and a love for coding.
 
 ### 📫 Contact Me
 
-Email: [hithamhauter@yahoo.com](mailto:hithamhauter@yahoo.com) | [hithamhauter5@gmail.com](mailto:hithamhauter@gmail.com)  
+Email: [hithamhauter@yahoo.com](mailto:hithamhauter@yahoo.com) | [hithamhauter@gmail.com](mailto:hithamhauter@gmail.com)  
 LinkedIn: [linkedin.com/in/hitham-hauter](https://www.linkedin.com/in/hitham-hauter)
 
 ---
@@ -44,7 +44,7 @@ LinkedIn: [linkedin.com/in/hitham-hauter](https://www.linkedin.com/in/hitham-hau
 <h2 align="left">⚒️ Languages, Frameworks & Tools</h2>
 
 <div align="left">
-  <img src="https://skillicons.dev/icons?i=python,js,html,css,mysql,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=python,js,html,css,mysql,go,swift,github,vscode" />
 </div>
 
 ---
@@ -56,4 +56,5 @@ LinkedIn: [linkedin.com/in/hitham-hauter](https://www.linkedin.com/in/hitham-hau
 ---
 
 > 💡 *Open to collaboration, learning, and new opportunities — feel free to reach out!*
+
 
