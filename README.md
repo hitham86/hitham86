@@ -36,7 +36,7 @@ Driven by curiosity and a love for coding.
 
 ### 📫 Contact Me
 
-Email: [hithamhauter@yahoo.com](mailto:hithamhauter@yahoo.com) | [hithamhauter@gmail.com](mailto:hithamhauter@gmail.com)  
+Email: [hithamhauter@yahoo.com](mailto:hithamhauter@yahoo.com) | [hithamhauter5@gmail.com](mailto:hithamhauter@gmail.com)  
 LinkedIn: [linkedin.com/in/hitham-hauter](https://www.linkedin.com/in/hitham-hauter)
 
 ---
