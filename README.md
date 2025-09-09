@@ -1,5 +1,5 @@
 <h1 align="left">👋 Hello, I'm Hitham</h1>
-<h3 align="left"> | Python Developer</h3>
+<h3 align="left">  Python Developer</h3>
 
 <div align="left"> 
   <a href="mailto:hithamhauter@yahoo.com" target="_blank">
