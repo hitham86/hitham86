@@ -39,9 +39,7 @@ Driven by curiosity and a love for coding.
 Email: [hithamhauter@yahoo.com](mailto:hithamhauter@yahoo.com) | [hithamhauter5@gmail.com](mailto:hithamhauter5@gmail.com)  
 LinkedIn: [linkedin.com/in/hitham-hauter](https://www.linkedin.com/in/hitham-hauter)
 
----
-
-<h2 align="left">⚒️ Languages, Frameworks & Tools</h2>
+## ⚒️ Languages, Frameworks & Tools
 
 <div align="left">
   <img src="https://skillicons.dev/icons?i=python,js,html,css,mysql,go,swift,github,vscode" />
@@ -49,9 +47,11 @@ LinkedIn: [linkedin.com/in/hitham-hauter](https://www.linkedin.com/in/hitham-hau
 
 ---
 
-<h2 align="left">📊 GitHub Stats</h2>
+## 📊 GitHub Stats
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&show_icons=true&theme=radical)
+<div align="left">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&layout=compact&theme=radical" />
+</div>
 
 ---
 
