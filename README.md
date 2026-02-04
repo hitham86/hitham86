@@ -45,12 +45,15 @@ LinkedIn: [linkedin.com/in/hitham-hauter](https://www.linkedin.com/in/hitham-hau
   <img src="https://skillicons.dev/icons?i=python,js,html,css,mysql,go,swift,github,vscode" />
 </div>
 
----
-## 📊 GitHub Stats
 
-<div align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&layout=compact&theme=radical" />
-</div>
+## 🚀 What I Build
+
+- AI-powered web apps & automation tools  
+- Django & full-stack systems  
+- Business dashboards & data pipelines  
+- Trading, finance, and analytics apps  
+- Custom tools for real businesses
+
 
 
 > 💡 *Open to collaboration, learning, and new opportunities — feel free to reach out!*
