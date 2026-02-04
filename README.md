@@ -46,14 +46,12 @@ LinkedIn: [linkedin.com/in/hitham-hauter](https://www.linkedin.com/in/hitham-hau
 </div>
 
 ---
-
 ## 📊 GitHub Stats
 
 <div align="left">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&layout=compact&theme=radical" />
 </div>
 
----
 
 > 💡 *Open to collaboration, learning, and new opportunities — feel free to reach out!*
 
