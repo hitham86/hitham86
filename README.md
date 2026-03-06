@@ -87,60 +87,156 @@ Driven by curiosity — always learning, always shipping.
 
 
 
+<div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7c6aff&height=200&section=header&text=Hitham&fontSize=80&fontColor=ffffff&fontAlignY=35&desc=Python%20Developer&descAlignY=55&descSize=20&descColor=00e5ff" />
 
-# 📈 Hello World, I'm Hitham | TheDevOfWallStreet
+</div>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=435&lines=Python+Developer;AI+%26+Data+Science+Enthusiast;Building+Financial+Tech;Solving+Complex+Problems" alt="Typing SVG" />
-</p>
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=7C6AFF&center=true&vCenter=true&width=600&lines=Python+Developer+%F0%9F%90%8D;Building+AI+%26+Automation+Tools+%F0%9F%A4%96;Full-Stack+%7C+Django+%7C+Data+Science;Always+Learning%2C+Always+Shipping+%F0%9F%9A%80)](https://git.io/typing-svg)
+
+</div>
+
+<div align="center">
+
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hithamhauter5@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hitham-hauter)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hitham86)
+[![Profile Views](https://komarev.com/ghpvc/?username=hitham86&style=for-the-badge&color=7c6aff&label=PROFILE+VIEWS)](https://github.com/hitham86)
+
+</div>
+
+<br/>
+
+<img align="right" alt="Coding" width="360" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" />
+
+### 🙋‍♂️ About Me
+
+```python
+developer = {
+    "name":      "Hitham",
+    "role":      "Python Developer",
+    "location":  "Open to Remote 🌍",
+    "focus":     ["AI", "Automation", "Full-Stack"],
+    "languages": ["Python", "JavaScript", "Go", "Swift", "SQL"],
+    "currently": "Building tools that solve real business problems",
+    "open_to":   "Collaboration & New Opportunities 🤝"
+}
+```
+
+<br clear="right"/>
 
 ---
 
-### 🏛️ Executive Summary
-I’m an aspiring developer bridgeing the gap between **High-Finance Strategy** and **Scalable Software Engineering**. Whether it's building AI-powered automation or architecting data pipelines, I focus on delivering code that generates value.
+## 🔍 What I'm Up To
 
-- 🔭 **Currently Hacking:** Advanced Python-based trading tools & AI automation.
-- 🎓 **Deep Diving:** Artificial Intelligence, Data Science, and Go performance.
-- ⚡ **The Goal:** Building systems that don't just work, but scale.
-
----
-
-### 🛠️ The Tech Stack
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=py,js,golang,swift,html,css,mysql,postgres,git,vscode,django,fastapi" />
-</p>
+<table>
+<tr><td>🔭</td><td>Building <b>Python automation & data tools</b></td></tr>
+<tr><td>🌱</td><td>Deepening skills in <b>Artificial Intelligence</b> & <b>Data Science</b></td></tr>
+<tr><td>💬</td><td>Ask me about <b>Python</b>, <b>Django</b>, or <b>SQL</b></td></tr>
+<tr><td>🤝</td><td>Open to <b>collaboration and new opportunities</b></td></tr>
+</table>
 
 ---
 
-### 📊 Performance Metrics
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=hitham86&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&layout=compact&theme=tokyonight" />
-</p>
+## ⚒️ Tech Stack
+
+<div align="center">
+
+**Languages**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
+![SQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
+
+**Web & Frameworks**
+
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+**Tools & Platforms**
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+</div>
 
 ---
 
-### 🏗️ What’s Under Construction?
-| Project | Focus | Status |
-| :--- | :--- | :--- |
-| **Quant-Flow** | Financial Analytics Dashboard | `In Development` |
-| **Neural-Trade** | AI-driven market sentiment tool | `MVP` |
-| **Automate-Pro** | Full-stack business automation | `Maintained` |
+## 🚀 What I Build
+
+<div align="center">
+
+| 🤖 AI & Automation | 📊 Dashboards & Data | 💹 Finance & Trading |
+|:---:|:---:|:---:|
+| Web apps and bots that eliminate manual work | Business analytics & visualization tools | Market data apps & trading analytics |
+
+| 🌐 Full-Stack Systems | 🛠️ Custom Business Tools |
+|:---:|:---:|
+| Django-powered platforms end-to-end | Tailored software for real business needs |
+
+</div>
 
 ---
 
-### 🤝 Connect with Me
-<p align="left">
-<a href="mailto:hithamhauter5@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<a href="https://linkedin.com/in/hitham-hauter"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://github.com/hitham86"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
-</p>
+## 📊 GitHub Stats
 
-<img src="https://raw.githubusercontent.com/hitham86/hitham86/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+<div align="center">
 
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=hitham86&show_icons=true&hide_border=true&bg_color=0d1117&title_color=7c6aff&icon_color=00e5ff&text_color=e8e8f0&count_private=true" />
+&nbsp;
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c6aff&text_color=e8e8f0" />
 
+</div>
 
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=hitham86&bg_color=0d1117&color=7c6aff&line=00e5ff&point=ffffff&hide_border=true" />
+
+</div>
+
+---
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=hitham86&theme=discord&no-frame=true&no-bg=true&row=1&column=7" />
+
+</div>
+
+---
+
+<div align="center">
+
+### 🐍 Contribution Snake
+
+![snake gif](https://github.com/hitham86/hitham86/blob/output/github-contribution-grid-snake-dark.svg)
+
+</div>
+
+---
+
+<div align="center">
+
+### 📫 Let's Connect
+
+[![Gmail](https://img.shields.io/badge/hithamhauter5%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hithamhauter5@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/hitham--hauter-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hitham-hauter)
+
+<br/>
+
+*💡 Open to collaboration, learning, and new opportunities — feel free to reach out!*
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7c6aff&height=120&section=footer" />
 
 
 
