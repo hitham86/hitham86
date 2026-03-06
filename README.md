@@ -87,6 +87,9 @@ Driven by curiosity — always learning, always shipping.
 
 
 
+
+
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7c6aff&height=200&section=header&text=Hitham&fontSize=80&fontColor=ffffff&fontAlignY=35&desc=Python%20Developer&descAlignY=55&descSize=20&descColor=00e5ff" />
@@ -187,37 +190,29 @@ developer = {
 
 ## 📊 GitHub Stats
 
+> ⚠️ Stats load once you have public repositories — push your first project to see them!
+
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=hitham86&show_icons=true&hide_border=true&bg_color=0d1117&title_color=7c6aff&icon_color=00e5ff&text_color=e8e8f0&count_private=true" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=hitham86&show_icons=true&hide_border=true&bg_color=0d1117&title_color=7c6aff&icon_color=00e5ff&text_color=e8e8f0&count_private=true&include_all_commits=true" />
 &nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c6aff&text_color=e8e8f0" />
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=hitham86&bg_color=0d1117&color=7c6aff&line=00e5ff&point=ffffff&hide_border=true" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c6aff&text_color=e8e8f0&langs_count=8" />
 
 </div>
 
 ---
 
-## 🏆 GitHub Trophies
+## 🎯 Goals for 2026
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=hitham86&theme=discord&no-frame=true&no-bg=true&row=1&column=7" />
-
-</div>
-
----
-
-<div align="center">
-
-### 🐍 Contribution Snake
-
-![snake gif](https://github.com/hitham86/hitham86/blob/output/github-contribution-grid-snake-dark.svg)
+| Goal | Status |
+|:---|:---:|
+| Build and ship 5 Python projects | 🔄 In Progress |
+| Master Machine Learning fundamentals | 🔄 In Progress |
+| Contribute to open source | 📌 Planned |
+| Build a SaaS product | 📌 Planned |
+| Land a dev role or client | 🔥 Active |
 
 </div>
 
@@ -237,8 +232,6 @@ developer = {
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7c6aff&height=120&section=footer" />
-
-
 
 
 
