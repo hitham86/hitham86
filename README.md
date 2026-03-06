@@ -188,17 +188,6 @@ developer = {
 
 ---
 
-## 📊 GitHub Stats
-
-> ⚠️ Stats load once you have public repositories — push your first project to see them!
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=hitham86&show_icons=true&hide_border=true&bg_color=0d1117&title_color=7c6aff&icon_color=00e5ff&text_color=e8e8f0&count_private=true&include_all_commits=true" />
-&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c6aff&text_color=e8e8f0&langs_count=8" />
-
-</div>
 
 ---
 
