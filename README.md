@@ -91,32 +91,6 @@ Driven by curiosity — always learning, always shipping.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7c6aff&height=200&section=header&text=Hitham&fontSize=80&fontColor=ffffff&fontAlignY=35&desc=Python%20Developer&descAlignY=55&descSize=20&descColor=00e5ff" />
@@ -140,7 +114,7 @@ Driven by curiosity — always learning, always shipping.
 
 <br/>
 
-<img align="right" alt="Coding" width="380" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" />
+<img align="right" alt="Coding" width="360" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" />
 
 ### 🙋‍♂️ About Me
 
@@ -219,14 +193,15 @@ developer = {
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=hitham86&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0a0f&title_color=7c6aff&icon_color=00e5ff&text_color=e8e8f0"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0a0f&title_color=7c6aff&text_color=e8e8f0"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=hitham86&show_icons=true&hide_border=true&bg_color=0d1117&title_color=7c6aff&icon_color=00e5ff&text_color=e8e8f0&count_private=true" />
+&nbsp;
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitham86&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c6aff&text_color=e8e8f0" />
 
 </div>
 
 <div align="center">
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=hitham86&theme=tokyonight&hide_border=true&background=0a0a0f&stroke=7c6aff&ring=7c6aff&fire=00e5ff&currStreakLabel=00e5ff)](https://git.io/streak-stats)
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=hitham86&bg_color=0d1117&color=7c6aff&line=00e5ff&point=ffffff&hide_border=true" />
 
 </div>
 
@@ -236,7 +211,7 @@ developer = {
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=hitham86&theme=tokyonight&no-frame=true&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+<img src="https://github-profile-trophy.vercel.app/?username=hitham86&theme=discord&no-frame=true&no-bg=true&row=1&column=7" />
 
 </div>
 
@@ -253,6 +228,34 @@ developer = {
 
 *💡 Open to collaboration, learning, and new opportunities — feel free to reach out!*
 
+<br/>
+
+![snake gif](https://github.com/hitham86/hitham86/blob/output/github-contribution-grid-snake-dark.svg)
+
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7c6aff&height=120&section=footer" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
