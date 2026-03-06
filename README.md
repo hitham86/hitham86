@@ -1,466 +1,246 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hitham – GitHub Profile</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #0a0a0f;
-    --surface: #111118;
-    --border: #1e1e2e;
-    --accent: #7c6aff;
-    --accent2: #00e5ff;
-    --accent3: #ff6b6b;
-    --text: #e8e8f0;
-    --muted: #6b6b8a;
-    --card: #13131e;
-  }
+import { useState, useEffect } from "react";
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+export default function HithamProfile() {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => { setTimeout(() => setLoaded(true), 100); }, []);
 
-  body {
-    background: var(--bg);
-    font-family: 'Inter', sans-serif;
-    color: var(--text);
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
+  const techs = [
+    { label: "Python", color: "#3776ab" },
+    { label: "JavaScript", color: "#f7df1e" },
+    { label: "HTML", color: "#e34f26" },
+    { label: "CSS", color: "#264de4" },
+    { label: "MySQL", color: "#00758f" },
+    { label: "Go", color: "#00acd7" },
+    { label: "Swift", color: "#fa7343" },
+    { label: "Git / GitHub", color: "#aaaaaa" },
+    { label: "VS Code", color: "#007acc" },
+  ];
 
-  /* Animated background grid */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: 
-      linear-gradient(rgba(124,106,255,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(124,106,255,0.04) 1px, transparent 1px);
-    background-size: 40px 40px;
-    z-index: 0;
-  }
+  const builds = [
+    "AI-powered web apps & automation tools",
+    "Django & full-stack systems",
+    "Business dashboards & data pipelines",
+    "Trading, finance & analytics apps",
+    "Custom tools for real businesses",
+  ];
 
-  .container {
-    position: relative;
-    z-index: 1;
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 48px 24px;
-  }
+  const fadeStyle = (delay) => ({
+    opacity: loaded ? 1 : 0,
+    transform: loaded ? "translateY(0)" : "translateY(18px)",
+    transition: `opacity 0.6s ${delay}s ease, transform 0.6s ${delay}s ease`,
+  });
 
-  /* HERO */
-  .hero {
-    margin-bottom: 48px;
-    animation: fadeUp 0.6s ease both;
-  }
+  return (
+    <div style={{
+      background: "#0a0a0f",
+      minHeight: "100vh",
+      fontFamily: "'Segoe UI', system-ui, sans-serif",
+      color: "#e8e8f0",
+      padding: "0",
+      position: "relative",
+    }}>
+      {/* Grid background */}
+      <div style={{
+        position: "fixed", inset: 0, zIndex: 0,
+        backgroundImage: "linear-gradient(rgba(124,106,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(124,106,255,0.05) 1px, transparent 1px)",
+        backgroundSize: "40px 40px",
+        pointerEvents: "none",
+      }} />
 
-  .greeting {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(2rem, 6vw, 3.2rem);
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
-    margin-bottom: 8px;
-  }
+      <div style={{ position: "relative", zIndex: 1, maxWidth: 760, margin: "0 auto", padding: "48px 24px" }}>
 
-  .greeting .wave { display: inline-block; animation: wave 2s ease-in-out infinite; }
+        {/* HERO */}
+        <div style={{ marginBottom: 44, ...fadeStyle(0) }}>
+          <div style={{ fontSize: "clamp(2rem,6vw,3rem)", fontWeight: 800, letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: 8 }}>
+            <span style={{ display: "inline-block", animation: "wave 2s ease-in-out infinite" }}>👋</span>{" "}
+            Hello, I'm{" "}
+            <span style={{ background: "linear-gradient(135deg,#7c6aff,#00e5ff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+              Hitham
+            </span>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 20 }}>
+            <div style={{ width: 24, height: 1, background: "#00e5ff" }} />
+            <span style={{ fontFamily: "monospace", fontSize: "0.8rem", color: "#00e5ff", letterSpacing: "0.15em", textTransform: "uppercase" }}>
+              Python Developer
+            </span>
+          </div>
 
-  @keyframes wave {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(20deg); }
-    75% { transform: rotate(-10deg); }
-  }
+          {/* Badges */}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+            {[
+              { label: "Yahoo", bg: "rgba(96,1,210,0.2)", border: "#6001d2", color: "#b388ff", href: "mailto:hithamhauter@yahoo.com" },
+              { label: "Gmail", bg: "rgba(209,72,54,0.2)", border: "#d14836", color: "#ff8a73", href: "mailto:hithamhauter5@gmail.com" },
+              { label: "GitHub", bg: "rgba(255,255,255,0.05)", border: "#444", color: "#ccc", href: "https://github.com/hitham86" },
+              { label: "LinkedIn", bg: "rgba(0,119,181,0.2)", border: "#0077b5", color: "#64b5f6", href: "https://linkedin.com/in/hitham-hauter" },
+            ].map(b => (
+              <a key={b.label} href={b.href} target="_blank" rel="noreferrer" style={{
+                display: "flex", alignItems: "center", gap: 6,
+                padding: "6px 14px", borderRadius: 6,
+                fontFamily: "monospace", fontSize: "0.72rem", fontWeight: 700,
+                letterSpacing: "0.05em", textTransform: "uppercase", textDecoration: "none",
+                background: b.bg, border: `1px solid ${b.border}`, color: b.color,
+                transition: "all 0.2s",
+              }}
+                onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.filter = "brightness(1.3)"; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.filter = ""; }}
+              >
+                {b.label}
+              </a>
+            ))}
+          </div>
+        </div>
 
-  .greeting .name {
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
+        <Divider />
 
-  .title-line {
-    font-family: 'Space Mono', monospace;
-    font-size: 0.85rem;
-    color: var(--accent2);
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+        {/* ABOUT */}
+        <Section title="🙋‍♂️ About Me" delay={0.1} loaded={loaded}>
+          <p style={{ fontSize: "0.95rem", lineHeight: 1.8, color: "#a0a0c0", borderLeft: "2px solid #7c6aff", paddingLeft: 16 }}>
+            Developer passionate about <B>Python</B>, <B>JavaScript</B>, <B>SQL</B>, <B>Golang</B>, and <B>Swift</B>.<br />
+            Always eager to learn new technologies and solve challenging problems.<br />
+            Driven by curiosity and a love for building things that matter.
+          </p>
+        </Section>
 
-  .title-line::before {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 1px;
-    background: var(--accent2);
-  }
+        <Divider />
 
-  /* BADGES */
-  .badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 36px;
-    animation: fadeUp 0.6s 0.1s ease both;
-  }
+        {/* CURRENTLY */}
+        <Section title="🔍 Currently" delay={0.15} loaded={loaded}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))", gap: 12 }}>
+            {[
+              { icon: "🔭", text: <>Building <B>Python Projects</B> focused on automation & data</> },
+              { icon: "🌱", text: <>Deepening skills in <B>AI</B> & <B>Data Science</B></> },
+              { icon: "💬", text: <>Happy to chat about <B>Programming</B> & <B>SQL</B></> },
+            ].map((c, i) => (
+              <div key={i} style={{ background: "#13131e", border: "1px solid #1e1e2e", borderRadius: 10, padding: 16, transition: "all 0.2s" }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = "#7c6aff"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = "#1e1e2e"; e.currentTarget.style.transform = ""; }}
+              >
+                <div style={{ fontSize: "1.3rem", marginBottom: 8 }}>{c.icon}</div>
+                <p style={{ fontSize: "0.82rem", color: "#6b6b8a", lineHeight: 1.5 }}>{c.text}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
 
-  .badge {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 6px 14px;
-    border-radius: 6px;
-    font-family: 'Space Mono', monospace;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid transparent;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
+        <Divider />
 
-  .badge:hover { transform: translateY(-2px); filter: brightness(1.2); }
+        {/* TECH */}
+        <Section title="⚒️ Languages, Frameworks & Tools" delay={0.2} loaded={loaded}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+            {techs.map(t => (
+              <div key={t.label} style={{
+                display: "flex", alignItems: "center", gap: 7,
+                background: "#13131e", border: "1px solid #1e1e2e", borderRadius: 8,
+                padding: "8px 14px", fontFamily: "monospace", fontSize: "0.75rem", color: "#6b6b8a",
+                transition: "all 0.2s", cursor: "default",
+              }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = "#7c6aff"; e.currentTarget.style.color = "#e8e8f0"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = "#1e1e2e"; e.currentTarget.style.color = "#6b6b8a"; e.currentTarget.style.transform = ""; }}
+              >
+                <span style={{ width: 7, height: 7, borderRadius: "50%", background: t.color, flexShrink: 0, display: "inline-block" }} />
+                {t.label}
+              </div>
+            ))}
+          </div>
+        </Section>
 
-  .badge-yahoo  { background: rgba(96,1,210,0.2); border-color: #6001d2; color: #b388ff; }
-  .badge-gmail  { background: rgba(209,72,54,0.2); border-color: #d14836; color: #ff8a73; }
-  .badge-github { background: rgba(255,255,255,0.05); border-color: #444; color: #ccc; }
-  .badge-linkedin { background: rgba(0,119,181,0.2); border-color: #0077b5; color: #64b5f6; }
+        <Divider />
 
-  /* DIVIDER */
-  .divider {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--border), var(--accent)/30, var(--border), transparent);
-    margin: 32px 0;
-  }
+        {/* WHAT I BUILD */}
+        <Section title="🚀 What I Build" delay={0.25} loaded={loaded}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+            {builds.map((b, i) => (
+              <div key={i} style={{
+                background: "#13131e", border: "1px solid #1e1e2e", borderRadius: 8,
+                padding: "12px 16px", fontSize: "0.85rem", color: "#9090b0",
+                display: "flex", alignItems: "center", gap: 10, transition: "all 0.2s",
+              }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = "#00e5ff"; e.currentTarget.style.color = "#e8e8f0"; e.currentTarget.style.transform = "translateX(3px)"; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = "#1e1e2e"; e.currentTarget.style.color = "#9090b0"; e.currentTarget.style.transform = ""; }}
+              >
+                <span style={{ color: "#00e5ff", fontFamily: "monospace", fontSize: "0.8rem", flexShrink: 0 }}>→</span>
+                {b}
+              </div>
+            ))}
+          </div>
+        </Section>
 
-  /* SECTION */
-  .section {
-    margin-bottom: 40px;
-    animation: fadeUp 0.6s ease both;
-  }
+        <Divider />
 
-  .section-title {
-    font-family: 'Syne', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+        {/* CONTACT */}
+        <Section title="📫 Contact Me" delay={0.3} loaded={loaded}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
+            {[
+              { label: "hithamhauter@yahoo.com", href: "mailto:hithamhauter@yahoo.com" },
+              { label: "hithamhauter5@gmail.com", href: "mailto:hithamhauter5@gmail.com" },
+              { label: "linkedin.com/in/hitham-hauter", href: "https://linkedin.com/in/hitham-hauter" },
+            ].map(c => (
+              <a key={c.label} href={c.href} target="_blank" rel="noreferrer" style={{
+                display: "flex", alignItems: "center", gap: 8,
+                background: "#13131e", border: "1px solid #1e1e2e", borderRadius: 8,
+                padding: "10px 16px", fontSize: "0.82rem", color: "#6b6b8a",
+                textDecoration: "none", fontFamily: "monospace", transition: "all 0.2s",
+              }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = "#7c6aff"; e.currentTarget.style.color = "#7c6aff"; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = "#1e1e2e"; e.currentTarget.style.color = "#6b6b8a"; }}
+              >
+                {c.label}
+              </a>
+            ))}
+          </div>
+        </Section>
 
-  .section-title span { font-size: 1.1rem; }
-
-  .section-title::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
-
-  /* ABOUT */
-  .about-text {
-    font-size: 0.95rem;
-    line-height: 1.8;
-    color: #a0a0c0;
-    border-left: 2px solid var(--accent);
-    padding-left: 16px;
-  }
-
-  .about-text strong {
-    color: var(--text);
-    font-weight: 500;
-  }
-
-  /* CURRENTLY GRID */
-  .currently-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-  }
-
-  .currently-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px;
-    transition: border-color 0.2s, transform 0.2s;
-  }
-
-  .currently-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-2px);
-  }
-
-  .currently-card .icon { font-size: 1.3rem; margin-bottom: 8px; }
-
-  .currently-card p {
-    font-size: 0.82rem;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-
-  .currently-card strong { color: var(--text); font-weight: 500; }
-
-  /* TECH ICONS */
-  .tech-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .tech-pill {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 8px 14px;
-    font-family: 'Space Mono', monospace;
-    font-size: 0.75rem;
-    color: var(--muted);
-    transition: all 0.2s;
-  }
-
-  .tech-pill:hover {
-    border-color: var(--accent);
-    color: var(--text);
-    transform: translateY(-2px);
-  }
-
-  .tech-pill .dot {
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    background: var(--accent);
-    flex-shrink: 0;
-  }
-
-  .tech-pill .dot.go     { background: #00acd7; }
-  .tech-pill .dot.js     { background: #f7df1e; }
-  .tech-pill .dot.py     { background: #3776ab; }
-  .tech-pill .dot.swift  { background: #fa7343; }
-  .tech-pill .dot.sql    { background: #00758f; }
-  .tech-pill .dot.html   { background: #e34f26; }
-  .tech-pill .dot.css    { background: #264de4; }
-  .tech-pill .dot.vscode { background: #007acc; }
-  .tech-pill .dot.github { background: #aaa; }
-
-  /* WHAT I BUILD */
-  .build-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    list-style: none;
-  }
-
-  @media (max-width: 500px) { .build-list { grid-template-columns: 1fr; } }
-
-  .build-item {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 12px 16px;
-    font-size: 0.85rem;
-    color: #9090b0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.2s;
-  }
-
-  .build-item:hover {
-    border-color: var(--accent2);
-    color: var(--text);
-    transform: translateX(3px);
-  }
-
-  .build-item::before {
-    content: '→';
-    color: var(--accent2);
-    font-family: 'Space Mono', monospace;
-    font-size: 0.8rem;
-    flex-shrink: 0;
-  }
-
-  /* CONTACT */
-  .contact-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .contact-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 10px 16px;
-    font-size: 0.82rem;
-    color: var(--muted);
-    text-decoration: none;
-    transition: all 0.2s;
-    font-family: 'Space Mono', monospace;
-  }
-
-  .contact-link:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  /* CALLOUT */
-  .callout {
-    background: linear-gradient(135deg, rgba(124,106,255,0.08), rgba(0,229,255,0.06));
-    border: 1px solid rgba(124,106,255,0.3);
-    border-radius: 10px;
-    padding: 16px 20px;
-    font-size: 0.875rem;
-    color: #a0a0c0;
-    font-style: italic;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 40px;
-  }
-
-  .callout .bulb { font-size: 1.2rem; font-style: normal; }
-
-  /* ANIMATIONS */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  .section:nth-child(2)  { animation-delay: 0.05s; }
-  .section:nth-child(3)  { animation-delay: 0.10s; }
-  .section:nth-child(4)  { animation-delay: 0.15s; }
-  .section:nth-child(5)  { animation-delay: 0.20s; }
-  .section:nth-child(6)  { animation-delay: 0.25s; }
-</style>
-</head>
-<body>
-<div class="container">
-
-  <!-- HERO -->
-  <div class="hero">
-    <div class="greeting">
-      <span class="wave">👋</span> Hello, I'm <span class="name">Hitham</span>
-    </div>
-    <div class="title-line">Python Developer</div>
-
-    <div class="badges">
-      <a class="badge badge-yahoo" href="mailto:hithamhauter@yahoo.com">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 11L12 4 9.5 11H14.5zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm2.5 13.5L13 20h-2l-1.5-6.5L7 20H5l3.5-8.5L5 4h2l2.5 5.5L12 4h2l-3.5 7.5L13.5 20h-2l-1.5-6.5z"/></svg>
-        Yahoo
-      </a>
-      <a class="badge badge-gmail" href="mailto:hithamhauter5@gmail.com">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        Gmail
-      </a>
-      <a class="badge badge-github" href="https://github.com/hitham86" target="_blank">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-        GitHub
-      </a>
-      <a class="badge badge-linkedin" href="https://www.linkedin.com/in/hitham-hauter" target="_blank">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        LinkedIn
-      </a>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ABOUT -->
-  <div class="section">
-    <div class="section-title"><span>🙋‍♂️</span> About Me</div>
-    <p class="about-text">
-      Developer passionate about <strong>Python</strong>, <strong>JavaScript</strong>, <strong>SQL</strong>, <strong>Golang</strong>, and <strong>Swift</strong>.<br>
-      Always eager to learn new technologies and solve challenging problems.<br>
-      Driven by curiosity and a love for building things that matter.
-    </p>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- CURRENTLY -->
-  <div class="section">
-    <div class="section-title"><span>🔍</span> Currently</div>
-    <div class="currently-grid">
-      <div class="currently-card">
-        <div class="icon">🔭</div>
-        <p>Building <strong>Python Projects</strong> focused on automation & data</p>
+        {/* CALLOUT */}
+        <div style={{
+          marginTop: 40,
+          background: "linear-gradient(135deg,rgba(124,106,255,0.08),rgba(0,229,255,0.06))",
+          border: "1px solid rgba(124,106,255,0.3)",
+          borderRadius: 10, padding: "16px 20px",
+          fontSize: "0.875rem", color: "#a0a0c0", fontStyle: "italic",
+          display: "flex", alignItems: "center", gap: 12,
+          ...fadeStyle(0.35),
+        }}>
+          <span style={{ fontSize: "1.2rem", fontStyle: "normal" }}>💡</span>
+          Open to collaboration, learning, and new opportunities — feel free to reach out!
+        </div>
       </div>
-      <div class="currently-card">
-        <div class="icon">🌱</div>
-        <p>Deepening skills in <strong>Artificial Intelligence</strong> & <strong>Data Science</strong></p>
+
+      <style>{`
+        @keyframes wave {
+          0%, 100% { transform: rotate(0deg); }
+          25% { transform: rotate(20deg); }
+          75% { transform: rotate(-10deg); }
+        }
+      `}</style>
+    </div>
+  );
+}
+
+function Divider() {
+  return <div style={{ height: 1, background: "linear-gradient(90deg,transparent,#1e1e2e,#1e1e2e,transparent)", margin: "28px 0" }} />;
+}
+
+function Section({ title, children, delay, loaded }) {
+  return (
+    <div style={{
+      marginBottom: 36,
+      opacity: loaded ? 1 : 0,
+      transform: loaded ? "translateY(0)" : "translateY(18px)",
+      transition: `opacity 0.6s ${delay}s ease, transform 0.6s ${delay}s ease`,
+    }}>
+      <div style={{
+        display: "flex", alignItems: "center", gap: 10, marginBottom: 16,
+        fontFamily: "monospace", fontSize: "0.85rem", fontWeight: 700,
+        letterSpacing: "0.08em", textTransform: "uppercase", color: "#6b6b8a",
+      }}>
+        {title}
+        <div style={{ flex: 1, height: 1, background: "#1e1e2e" }} />
       </div>
-      <div class="currently-card">
-        <div class="icon">💬</div>
-        <p>Happy to chat about <strong>Programming</strong> & <strong>SQL</strong></p>
-      </div>
+      {children}
     </div>
-  </div>
+  );
+}
 
-  <div class="divider"></div>
-
-  <!-- TECH -->
-  <div class="section">
-    <div class="section-title"><span>⚒️</span> Languages, Frameworks & Tools</div>
-    <div class="tech-grid">
-      <div class="tech-pill"><span class="dot py"></span>Python</div>
-      <div class="tech-pill"><span class="dot js"></span>JavaScript</div>
-      <div class="tech-pill"><span class="dot html"></span>HTML</div>
-      <div class="tech-pill"><span class="dot css"></span>CSS</div>
-      <div class="tech-pill"><span class="dot sql"></span>MySQL</div>
-      <div class="tech-pill"><span class="dot go"></span>Go</div>
-      <div class="tech-pill"><span class="dot swift"></span>Swift</div>
-      <div class="tech-pill"><span class="dot github"></span>Git / GitHub</div>
-      <div class="tech-pill"><span class="dot vscode"></span>VS Code</div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- WHAT I BUILD -->
-  <div class="section">
-    <div class="section-title"><span>🚀</span> What I Build</div>
-    <ul class="build-list">
-      <li class="build-item">AI-powered web apps & automation tools</li>
-      <li class="build-item">Django & full-stack systems</li>
-      <li class="build-item">Business dashboards & data pipelines</li>
-      <li class="build-item">Trading, finance & analytics apps</li>
-      <li class="build-item">Custom tools for real businesses</li>
-    </ul>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- CONTACT -->
-  <div class="section">
-    <div class="section-title"><span>📫</span> Contact Me</div>
-    <div class="contact-row">
-      <a class="contact-link" href="mailto:hithamhauter@yahoo.com">✉ hithamhauter@yahoo.com</a>
-      <a class="contact-link" href="mailto:hithamhauter5@gmail.com">✉ hithamhauter5@gmail.com</a>
-      <a class="contact-link" href="https://www.linkedin.com/in/hitham-hauter" target="_blank">🔗 linkedin.com/in/hitham-hauter</a>
-    </div>
-  </div>
-
-  <!-- CALLOUT -->
-  <div class="callout">
-    <span class="bulb">💡</span>
-    Open to collaboration, learning, and new opportunities — feel free to reach out!
-  </div>
-
-</div>
-</body>
-</html>
+function B({ children }) {
+  return <strong style={{ color: "#e8e8f0", fontWeight: 500 }}>{children}</strong>;
+}
